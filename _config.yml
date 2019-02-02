@@ -8,9 +8,9 @@ baseurl:             ""
 
 # About/contact
 author: # you can edit these to be your personal details
-  name:              Xiaoying Riley
-  url:               https://twitter.com/3rdwave_themes
-  email:
+  name:              Tien Vo
+  url:               https://tienvx.github.io/
+  email:             tien.xuan.vo@gmail.com
 
 # Google services
 google_verification:
@@ -22,12 +22,13 @@ google_tag_manager:
 bing_verification:
 
 # Social
-github_username: thundergolfer
-twitter_username: 3rdwave_themes
+github_username: tienvx
+twitter_username: tienvoxuan
 instagram_username: kevin/
-facebook: 3rdwavethemes/
-linkedin_username: xiaoying
-dribbble_username: Xiaoying
+facebook: tien.voxuan/
+linkedin_username: tienxuanvo
+#dribbble_username: Xiaoying
+pinterest_username: tienxuanvo
 
 # Custom vars
 version:             1.0.1
