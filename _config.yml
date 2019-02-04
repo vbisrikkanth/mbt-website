@@ -2,7 +2,7 @@
 # Setup
 title:               MBT Bundle
 email:               tien.xuan.vo@gmail.com
-tagline:             Free Jekyll theme made for developers
+tagline:             A Model Based Testing tool
 url:                 "" # insert your site's URL
 baseurl:             ""
 
@@ -31,9 +31,9 @@ linkedin_username: tienxuanvo
 pinterest_username: tienxuanvo
 
 # Custom vars
-version:             1.0.1
+version:             1.0.0
 github:
-  repo:              https://github.com/kevit/devaid-jekyll-theme
+  repo:              https://github.com/tienvx/mbt-bundle
 
 # Gems - Dependencies for this theme
 gems:
@@ -59,7 +59,7 @@ widgets:
   - title: Contact
     url: contact
     archor: true
-  - title: Blog
-    url: blog
-  - title: Page
-    url: page
+  #- title: Blog
+  #  url: blog
+  #- title: Page
+  #  url: page
