@@ -35,8 +35,7 @@ version:             1.0.0
 github:
   repo:              https://github.com/tienvx/mbt-bundle
 
-# Gems - Dependencies for this theme
-gems:
+plugins:
   # None currently
 
 # Build settings
