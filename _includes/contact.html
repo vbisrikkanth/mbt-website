@@ -1,38 +1,36 @@
-    <!-- ******CONTACT****** -->
-    <section id="contact" class="contact section has-pattern">
-        <div class="container">
-            <div class="contact-inner">
-                <h2 class="title  text-center">Contact</h2>
-                <p class="intro  text-center">I hope you find this tool useful. <br />Feel free to get in touch if you have any questions or suggestions.</p>
-                <div class="author-message">
-                    <div class="profile">
-                      <img class="img-responsive" src="{{ site.baseurl }}public/images/profile.jpg" alt="" />
-                    </div><!--//profile-->
-                    <div class="speech-bubble">
-                        <h3 class="sub-title">Found a bug, or have an idea?</h3>
-                        <p>Feel free to fire a bug report at <a href="https://github.com/tienvx/mbt-bundle/issues" target="_blank">issues</a>
-                        <p>Please contact me via e-mail if you have an idea. If you know coding, please submit your code to <a href="https://github.com/tienvx/mbt-bundle/pulls" target="_blank">pull requests</a> and I am happy to review it.</p>
-                        <div class="source">
-                            <span class="name"><a href="https://tienvx.github.io/" target="_blank">Tien Vo</a></span>
-                            <br />
-                            <span class="title">PHP Developer</span>
-                        </div><!--//source-->
-                    </div><!--//speech-bubble-->
-                </div><!--//author-message-->
-                <div class="clearfix"></div>
-                <div class="info text-center">
-                    <h4 class="sub-title">Get Connected</h4>
-                    <ul class="social-icons list-inline">
-                        <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i></a></li>
-                        <li><a href="https://www.facebook.com/{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.pinterest.com/{{ site.pinterest_username }}"><i class="fa fa-pinterest"></i></a></li>
-                        <!--<li><a href="http://instagram.com/{{ site.instagram_username }}"><i class="fa fa-instagram"></i></a></li>-->
-                        <!--<li><a href="https://dribbble.com/{{ site.dribbble_username }}"><i class="fa fa-dribbble"></i></a></li>-->
-                        <li class="last"><a href="mailto: {{ site.email }}"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
-                </div><!--//info-->
-            </div><!--//contact-inner-->
-        </div><!--//container-->
-    </section><!--//contact-->
+<!-- ******CONTACT****** -->
+<section id="contact" class="contact section has-pattern">
+    <div class="container">
+        <div class="contact-inner">
+            <h2 class="title  text-center">Contact</h2>
+            <p class="intro  text-center">I hope you find this tool useful. <br />Feel free to get in touch if you have any questions or suggestions.</p>
+            <div class="author-message">
+                <div class="profile">
+                    <img class="img-fluid" src="assets/images/profile.png" alt="" />
+                </div><!--//profile-->
+                <div class="speech-bubble">
+                    <h3 class="sub-title">Found a bug, or have an idea?</h3>
+                    <p>Feel free to fire a bug report at <a href="https://github.com/tienvx/mbt-bundle/issues" target="_blank">issues</a></p>
+                    <p>Please contact me via e-mail if you have an idea. If you know coding, please submit your code to <a href="https://github.com/tienvx/mbt-bundle/pulls" target="_blank">pull requests</a> and I am happy to review it.</p>
+                    <div class="source">
+                        <span class="name"><a href="{{ site.author.url }}" target="_blank">{{ site.author.name }}</a></span>
+                        <br />
+                        <span class="title">{{ site.author.title }}</span>
+                    </div><!--//source-->
+                </div><!--//speech-bubble-->
+            </div><!--//author-message-->
+            <div class="clearfix"></div>
+            <div class="info text-center">
+                <h4 class="sub-title">Get Connected</h4>
+                <ul class="social-icons list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.pinterest.com/{{ site.pinterest_username }}" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                    <li class="list-inline-item last"><a href="mailto: {{ site.author.email }}"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div><!--//info-->
+        </div><!--//contact-inner-->
+    </div><!--//container-->
+</section><!--//contact-->
