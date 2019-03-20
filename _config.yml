@@ -1,46 +1,21 @@
-
-# Setup
+# Site
 title:               MBT Bundle
-email:               tien.xuan.vo@gmail.com
 tagline:             A Model Based Testing tool
-url:                 "" # insert your site's URL
-baseurl:             ""
+description:         MBT Bundle is an open-source tool that allow you to test your application using Model Based Testing technique
 
 # About/contact
 author: # you can edit these to be your personal details
   name:              Tien Vo
   url:               https://tienvx.github.io/
   email:             tien.xuan.vo@gmail.com
-
-# Google services
-google_verification:
-# Use either direct GA implementation or set up GTM account
-# - using both will skew your data (leave blank to not use at all)
-google_analytics:
-google_tag_manager:
-# Bing services
-bing_verification:
+  title:             PHP Developer
 
 # Social
 github_username: tienvx
 twitter_username: tienvoxuan
-#instagram_username: kevin/
-facebook: tien.voxuan/
+facebook_username: tien.voxuan
 linkedin_username: tienxuanvo
-#dribbble_username: Xiaoying
 pinterest_username: tienxuanvo
-
-# Custom vars
-version:             1.0.0
-github:
-  repo:              https://github.com/tienvx/mbt-bundle
-
-plugins:
-  # None currently
-
-# Build settings
-markdown:     kramdown
-permalink:    pretty
 
 widgets:
   - title: About
@@ -58,7 +33,3 @@ widgets:
   - title: Contact
     url: contact
     archor: true
-  #- title: Blog
-  #  url: blog
-  #- title: Page
-  #  url: page
