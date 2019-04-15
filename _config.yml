@@ -21,8 +21,8 @@ widgets:
   - title: About
     url: about
     archor: true
-  - title: Features
-    url: features
+  - title: Screenshots
+    url: screenshots
     archor: true
   - title: Docs
     url: docs
