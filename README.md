@@ -14,4 +14,4 @@ $ bundle exec jekyll serve
 ```
 
 ## License
-tienvx.github.io is available under the [MIT license](LICENSE).
+Please follow the license agreement for your projects https://themes.3rdwavemedia.com/bootstrap-templates/startup/devaid-free-bootstrap-theme-for-developers-side-projects/
