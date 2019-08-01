@@ -13,5 +13,10 @@
   background-color: #17baef;
 }
 .carousel-caption p {
-  background-color: #17baef;
+  color: #17baef;
+}
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
 }
