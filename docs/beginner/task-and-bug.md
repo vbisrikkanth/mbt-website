@@ -83,3 +83,11 @@ Anything that prevent the `generator` to complete walking through the model can 
 - Reducing: it's being handled by a `reducer`
 - Reduced: `reducer` has finish its job
 - Closed: when we think this bug is not valid any more, we can close this bug. The closed bug can be reopen again to check if it's still valid or not.
+
+### Tips
+
+- If you want reproduce steps to be shorter, go to bug's details page, and click `Reduce` action
+- If you are not sure the bug is still valid or not, go to bug's details page, click `Close` action to close it, then wait for the page to be reload, the click `Test` action. If the bug is re-opened again, it's still valid
+- If the bug is still closed, there are 2 cases:
+  - The bug is not valid anymore
+  - There is a new different bug at http://localhost/#/bugs

@@ -24,7 +24,7 @@ module.exports = {
         {to: 'docs/intro/mbt', label: 'Docs', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {to: 'showcase', label: 'Showcase', position: 'left'},
-        {to: 'docs/wrapup/tutorial', label: 'Tutorial', position: 'left'},
+        {to: 'docs/tutorial', label: 'Tutorial', position: 'left'},
         {
           href: 'https://github.com/tienvx/mbt-bundle',
           label: 'GitHub',

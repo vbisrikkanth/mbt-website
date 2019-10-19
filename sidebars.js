@@ -30,7 +30,6 @@ module.exports = {
       'advanced/ci',
     ],
     'Wrap up': [
-      'wrapup/tutorial',
       'wrapup/tips-and-tricks',
       'wrapup/qa',
     ]
