@@ -53,3 +53,9 @@ description: Explain what is MBT Bundle in what/why/how format
 | Reduce bug's reproduce steps | not available          | yes         |
 | Report bug                   | depend on tool         | yes         |
 | Need programming skill       | depend on tool         | yes         |
+
+## References
+
+MBT Bundle is inspired by these 2 slides:
+- [Model-Based Testing](http://testoptimal.com/ref/starwest-2006-mbt-tutorial.pdf)
+- [Graph Theory Techniques in Model-Based Testing](http://testoptimal.com/ref/GraphTheory%20Techniques%20In%20Model-Based%20Testing.pdf)

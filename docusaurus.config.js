@@ -10,14 +10,14 @@ module.exports = {
   tagline: 'An open source model-based testing tool',
   url: 'https://mbtbundle.github.io',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
   organizationName: 'mbtbundle', // Usually your GitHub org/user name.
   projectName: 'mbtbundle.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'MBT Bundle',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'MBT Bundle Logo',
         src: 'img/logo.svg',
       },
       links: [
@@ -30,6 +30,7 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
+        {to: 'screenshots', label: 'Screenshots', position: 'left'},
       ],
     },
     footer: {
@@ -40,7 +41,7 @@ module.exports = {
           items: [
             {
               label: 'Docs',
-              to: 'docs/doc1',
+              to: 'docs/intro/mbt',
             },
           ],
         },
@@ -48,8 +49,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Slack',
+              href: 'https://mbt-bundle.slack.com/',
             },
           ],
         },
@@ -63,11 +64,11 @@ module.exports = {
           ],
         },
       ],
-      logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'https://docusaurus.io/img/oss_logo.png',
-      },
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+      /*logo: {
+        alt: 'Docusaurus Logo',
+        src: 'img/docusaurus-logo.svg',
+      },*/
+      copyright: `Copyright © ${new Date().getFullYear()} Tien Vo. Built with Docusaurus.`,
     },
     googleAnalytics: {
       trackingID: 'UA-40149047-4',

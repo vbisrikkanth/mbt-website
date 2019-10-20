@@ -15,32 +15,31 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Test Early</>,
+    imageUrl: 'img/undraw_under_construction.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Stop waiting for the code to be available to be able to create test cases.
+        Start creating models from your business logic, let us generate test cases for you.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Focus on Your Business</>,
+    imageUrl: 'img/undraw_design_sprint.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        All you need to do is designing your models, we&apos; ll take care the rest, from generating test cases,
+        to reporting bug to external places (Slack, Email).
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Time Saving</>,
+    imageUrl: 'img/undraw_time_management.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        MBT Bundle can test multiple models at the same time. Don&apos; t worry if you created a lot of models.
       </>
     ),
   },
@@ -51,7 +50,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title} Home Page`}
       description="Description will go into a meta tag in <head />">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -63,7 +62,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={withBaseUrl('docs/doc1')}>
+              to={withBaseUrl('docs/beginner/start-examples-project')}>
               Get Started
             </Link>
           </div>

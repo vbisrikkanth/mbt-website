@@ -18,6 +18,5 @@ description: Explain what is the different between traditional testing and model
 
 ## Reference
 
-For more information about model based testing, I suggest to take a look at these 2 slides:
-- [Model-Based Testing](http://testoptimal.com/ref/starwest-2006-mbt-tutorial.pdf)
-- [Graph Theory Techniques in Model-Based Testing](http://testoptimal.com/ref/GraphTheory%20Techniques%20In%20Model-Based%20Testing.pdf)
+For more information about model based testing, please take a look at this blog post:
+[The Challenges and Benefits of Model-Based Testing](https://saucelabs.com/blog/the-challenges-and-benefits-of-model-based-testing)
