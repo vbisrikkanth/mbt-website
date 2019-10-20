@@ -1,10 +1,8 @@
 import React from 'react';
 
-import Image from '@theme/IdealImage';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-
-import mockup from './mockup.png';
+import withBaseUrl from '@docusaurus/withBaseUrl';
 
 function Showcase() {
   return (
@@ -42,7 +40,7 @@ function Showcase() {
               </div>
             </div>
             <div class="col col--7">
-              <Image img={mockup} alt="Mockup" />
+              <img src={withBaseUrl('img/mockup.png')} alt="Mockup" />
             </div>
           </div>
         </div>
