@@ -17,7 +17,7 @@ function Showcase() {
                 <div class="col">
                   <Link
                     class="button button--lg button--success"
-                    to="https://demo.mbtbundle.org"
+                    to="http://demo.mbtbundle.org"
                     target="_blank"
                     >
                     Demo
