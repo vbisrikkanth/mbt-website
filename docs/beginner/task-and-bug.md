@@ -20,7 +20,7 @@ To test a model (or a business logic), you need to create a task with these info
 7. Capture Screenshots: Should we capture screenshots for the bug we found (for testing UI only)
 
 Created task will be listed in [tasks](http://localhost/#/tasks) page:
-![tasks](../images/getting-started/tasks.png)
+![tasks](/img/docs/getting-started/tasks.png)
 
 ### Generator
 
@@ -61,7 +61,7 @@ We need to configure before we can use them.
 
 Anything that prevent the `generator` to complete walking through the model can be captured and reported as a bug. When a bug is found, we can see these information:
 
-![bug](../images/getting-started/bugs.png)
+![bug](/img/docs/getting-started/bugs.png)
 
 1. Title: you can change the default title of the bug, so that it can tell what is the real problem
 2. Status: can be

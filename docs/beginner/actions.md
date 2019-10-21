@@ -13,7 +13,7 @@ There are several actions:
 1. Create
 2. Bulk create by models
 
-![task-actions](../images/actions/task-actions.png)
+![task-actions](/img/docs/actions/task-actions.png)
 
 ## Bug (open)
 
@@ -22,14 +22,14 @@ There are several actions:
 3. Report
 4. Close
 
-![open-bug-actions](../images/actions/open-bug-actions.png)
+![open-bug-actions](/img/docs/actions/open-bug-actions.png)
 
 ## Bug (closed)
 
 1. Test
 2. Reopen
 
-![closed-bug-actions](../images/actions/closed-bug-actions.png)
+![closed-bug-actions](/img/docs/actions/closed-bug-actions.png)
 
 ## Model
 1. Build
@@ -44,4 +44,4 @@ There are several actions:
 1. Retry
 2. Remove
 
-![failed-message-actions](../images/actions/failed-message-actions.png)
+![failed-message-actions](/img/docs/actions/failed-message-actions.png)

@@ -35,13 +35,13 @@ Still a website, but this time we will create a model for a contact form with 4 
 
 Back to the examples we started early. [mobile_home](http://localhost/#/models/%2Fapi%2Fmodels%2Fmobile_home/show) is an example of a model with type `state machine`.
 
-![mobile_home](../images/getting-started/mobile_home.png)
+![mobile_home](/img/docs/getting-started/mobile_home.png)
 
 In this image, there are only arrows and circles. Arrows (with name) are transitions, and circles are places.
 
 [checkout](http://localhost/#/models/%2Fapi%2Fmodels%2Fcheckout/show) is an example of a model with type `workflow`.
 
-![checkout](../images/getting-started/checkout.png)
+![checkout](/img/docs/getting-started/checkout.png)
 
 In this image, there are arrows, circles and squares. We can ignore arrows. Squares are transitions, and circles are places.
 

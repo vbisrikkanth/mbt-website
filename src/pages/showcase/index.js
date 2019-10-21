@@ -40,7 +40,7 @@ function Showcase() {
               </div>
             </div>
             <div class="col col--7">
-              <img src={withBaseUrl('img/mockup.png')} alt="Mockup" />
+              <img src={withBaseUrl('img/showcase.png')} alt="Mockup" />
             </div>
           </div>
         </div>

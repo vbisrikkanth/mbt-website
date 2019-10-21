@@ -13,7 +13,7 @@ description: Predefined case is just like traditional test case
 Predefined case just like traditional automation test case. It contains pre-defined steps so that we can test it right away.
 
 Here is an example of a predefined case:
-![predefined-case](../images/predefined-case/predefined-case.png)
+![predefined-case](/img/docs/predefined-case/predefined-case.png)
 
 To create a predefined case, we need to provide:
 

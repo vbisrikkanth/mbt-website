@@ -35,4 +35,4 @@ php bin/console mbt:model:test [MODEL_NAME] --generator random --generator-optio
 ```
 
 Here is result:
-![test](../images/test/test.png)
+![test](/img/docs/test/test.png)

@@ -12,7 +12,7 @@ description: Explain MBT Bundle by testing a real (simple) application
 
 In this tutorial, we will test a simple web application using MBT Bundle: http://react-compare-app.surge.sh/
 
-![compare](./images/tutorial/compare.png)
+![compare](/img/docs/tutorial/compare.png)
 
 An application is very simple. It has these features:
 * Compare product
@@ -455,7 +455,7 @@ Now it's time to test your model on your local machine to make sure it works as 
 env PANTHER_NO_HEADLESS=1 bin/console mbt:model:test compare_app --generator random --generator-options '{"maxSteps": 20}'
 ```
 
-![result](./images/tutorial/test.gif)
+![result](/img/docs/tutorial/test.gif)
 
 ### Test your model with UI
 
@@ -469,7 +469,7 @@ docker-compose --project-name mbt-tutorial up --scale worker=2
 
 Then navigate to http://localhost and login with admin/admin. You can create your first task to test your model:
 
-![create-task](./images/tutorial/create-task.gif)
+![create-task](/img/docs/tutorial/create-task.gif)
 
 Of course, this compare app is simple so you can't find bug from it. But on more complex app, with lot of models, you can create more tasks with higher `Max Steps` number, then the chance for you to see a bug in http://localhost/#/bugs is higher.
 
