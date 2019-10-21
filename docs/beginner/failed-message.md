@@ -8,7 +8,7 @@ description: A friendly way to handle error of the MBT Bundle tool
 ---
 
 When there are something wrong happen, a failed message will be created automatically.
-![failed-messages](../images/getting-started/failed-messages.png)
+![failed-messages](/img/docs/getting-started/failed-messages.png)
 
 What you can do:
 

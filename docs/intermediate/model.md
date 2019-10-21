@@ -12,10 +12,10 @@ description: Create model from YAML config file
 
 A model is a yaml file that describe your business logic
 Here are some example models:
-![models](../images/getting-started/models.png)
+![models](/img/docs/getting-started/models.png)
 
 To create a model, we built UI for it http://localhost/#/models/build-model
-![build-model](../images/model/build-model.png)
+![build-model](/img/docs/model/build-model.png)
 
 After filling data for UI, we will have content to put into a YAML file.
 The file will have these information:
@@ -60,10 +60,10 @@ transitions:
 
 In state machine, there must be 1 place in `from`, and 1 place in `to`. In workflow, there is no such that restriction. That different will lead to 4 terminologies:
 
-* And-Split: ![and-split](../images/workflow-state-machine/and-split.png)
-* And-Join: ![and-join](../images/workflow-state-machine/and-join.png)
-* Or-Split: ![or-split](../images/workflow-state-machine/or-split.png)
-* Or-Join: ![or-join](../images/workflow-state-machine/or-join.png)
+* And-Split: ![and-split](/img/docs/workflow-state-machine/and-split.png)
+* And-Join: ![and-join](/img/docs/workflow-state-machine/and-join.png)
+* Or-Split: ![or-split](/img/docs/workflow-state-machine/or-split.png)
+* Or-Join: ![or-join](/img/docs/workflow-state-machine/or-join.png)
 
 Workflow can contains And-Split, And-Join, Or-Split and Or-Join. While state machine can only contains Or-Split and Or-Join
 
