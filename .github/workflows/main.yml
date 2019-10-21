@@ -20,4 +20,21 @@ jobs:
       run: yarn install
 
     - name: Deploy
-      run: GIT_USER=tienvx USE_SSH=1 yarn deploy
+      run: |
+        cat <<- EOF > $HOME/.netrc
+          machine github.com
+          login $GIT_USER
+          password $ACCESS_TOKEN
+
+          machine api.github.com
+          login $GIT_USER
+          password $ACCESS_TOKEN
+        EOF
+        chmod 600 $HOME/.netrc
+
+        git config --global user.name $GIT_USER
+        git config --global user.email $GIT_USER@users.noreply.github.com
+        yarn deploy
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        GIT_USER: ${{ secrets.GIT_USER }}
