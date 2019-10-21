@@ -16,5 +16,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
+    - name: Install
+      run: yarn install
+
     - name: Deploy
       run: GIT_USER=tienvx USE_SSH=1 yarn deploy
