@@ -74,8 +74,8 @@ module.exports = {
       trackingID: 'UA-40149047-4',
     },
     algolia: {
-      apiKey: '51247125ca6850f76e1924376e2d3649',
-      indexName: 'mbt-bundle',
+      apiKey: '562cb171575211627118ad5ffda03139',
+      indexName: 'mbtbundle',
       algoliaOptions: {}, // Optional, if provided by Algolia
     },
   },
