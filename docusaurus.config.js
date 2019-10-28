@@ -10,7 +10,7 @@ module.exports = {
   tagline: 'An open source model-based testing tool',
   url: 'https://mbtbundle.github.io',
   baseUrl: '/',
-  favicon: 'img/logo.svg',
+  favicon: 'img/favicon.ico',
   organizationName: 'mbtbundle', // Usually your GitHub org/user name.
   projectName: 'mbtbundle.github.io', // Usually your repo name.
   themeConfig: {
