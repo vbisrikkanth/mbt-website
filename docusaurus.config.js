@@ -25,12 +25,12 @@ module.exports = {
         {to: 'blog', label: 'Blog', position: 'left'},
         {to: 'showcase', label: 'Showcase', position: 'left'},
         {to: 'docs/tutorial', label: 'Tutorial', position: 'left'},
+        {to: 'screenshots', label: 'Screenshots', position: 'left'},
         {
           href: 'https://github.com/tienvx/mbt-bundle',
           label: 'GitHub',
           position: 'right',
         },
-        {to: 'screenshots', label: 'Screenshots', position: 'left'},
       ],
     },
     footer: {
@@ -65,8 +65,9 @@ module.exports = {
         },
       ],
       /*logo: {
-        alt: 'Docusaurus Logo',
-        src: 'img/docusaurus-logo.svg',
+        alt: 'Facebook Open Source Logo',
+        src: 'https://docusaurus.io/img/oss_logo.png',
+        href: 'https://opensource.facebook.com/',
       },*/
       copyright: `Copyright © ${new Date().getFullYear()} Tien Vo. Built with Docusaurus.`,
     },

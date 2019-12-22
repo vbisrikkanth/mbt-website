@@ -16,19 +16,19 @@ function Showcase() {
               <div className="row">
                 <div className="col">
                   <Link
-                    className="button button--lg button--success"
-                    to="http://demo.mbtbundle.org"
-                    target="_blank"
-                    >
-                    Demo
-                  </Link>
-                  &nbsp;
-                  <Link
                     className="button button--lg button--secondary"
                     to="https://github.com/tienvx/mbt-examples"
                     target="_blank"
                     >
                     Source code
+                  </Link>
+                  &nbsp;
+                  <Link
+                    className="button button--lg button--success"
+                    to="https://demo.mbtbundle.org"
+                    target="_blank"
+                    >
+                    Demo
                   </Link>
                   &nbsp;
                   <Link
