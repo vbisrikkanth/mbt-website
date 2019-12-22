@@ -49,6 +49,21 @@ class Product extends AbstractSubject
 
 > Annotation @Place, @Subject and @Transition are important. They will map the subject and its method to the correct model and its place and transition.
 
+## Write code
+
+There is an easy way to write code for each function: copy and paste from Katalon Recorder
+
+1. Open Chrome
+2. Install Katalon Recorder and PHPUnit formatter for Katalon Recorder plugins
+3. Nagivate to the website under test
+4. Open Katalon Recorder and click New to create new test case
+5. Click Record to start recording
+6. Navigate through your website
+7. Click Stop
+8. Click Export
+9. Choose PHP in the Format dropdown list
+10. Copy the code and paste to your function
+
 ## Notes
 
 Here are some useful tips:
