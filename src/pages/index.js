@@ -16,30 +16,28 @@ import styles from './styles.module.css';
 const features = [
   {
     title: <>Test Early</>,
-    imageUrl: 'img/undraw_under_construction.svg',
+    imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
     description: (
       <>
-        Stop waiting for the code to be available to be able to create test cases.
-        Start creating models from your business logic, let us generate test cases for you.
+        You can test right now! Creating models is independent from implementing your system.
       </>
     ),
   },
   {
-    title: <>Focus on Your Business</>,
-    imageUrl: 'img/undraw_design_sprint.svg',
+    title: <>Test Efficient</>,
+    imageUrl: 'img/undraw_mind_map_cwng.svg',
     description: (
       <>
-        All you need to do is designing your models, we&apos; ll take care the rest, from generating test cases,
-        to reporting bug to external places (Slack, Email).
+        Each time we test a model, a unique test case is generated. No test case are the same. Chance to find new bug is higher.
       </>
     ),
   },
   {
-    title: <>Time Saving</>,
-    imageUrl: 'img/undraw_time_management.svg',
+    title: <>Test Fast</>,
+    imageUrl: 'img/undraw_calendar_dutt.svg',
     description: (
       <>
-        MBT Bundle can test multiple models at the same time. Don&apos; t worry if you created a lot of models.
+        Test multiple models at the same time.
       </>
     ),
   },
@@ -62,6 +60,17 @@ const steps = [
     position: 'left'
   },
   {
+    title: <>Record Transitions</>,
+    imageUrl: 'img/record_transitions.gif',
+    description: (
+      <>
+        We can use Katalon Recorder to record actions, then use PHPUnit formatter
+        for Katalon Recorder to export code for our model
+      </>
+    ),
+    position: 'right'
+  },
+  {
     title: <>Create Task</>,
     imageUrl: 'img/create_task.gif',
     description: (
@@ -78,7 +87,7 @@ const steps = [
         </ul>
       </>
     ),
-    position: 'right'
+    position: 'left'
   },
   {
     title: <>Manage Bug</>,
@@ -97,7 +106,7 @@ const steps = [
         </ul>
       </>
     ),
-    position: 'left'
+    position: 'right'
   },
 ];
 
@@ -134,7 +143,7 @@ function Step({imageUrl, title, description, position}) {
           </div>
         )}
         {position === 'right' && (
-          <div className="row">
+          <div className={classnames('row', styles.stepBackground)}>
             <div className="col col--4 padding-vert--xl">
               <h2>{title}</h2>
               <p>{description}</p>
@@ -181,15 +190,6 @@ function Home() {
         </div>
       </header>
       <main>
-        {steps && steps.length && (
-          <section className={styles.steps}>
-            <div className="container">
-              {steps.map((props, idx) => (
-                <Step key={idx} {...props} />
-              ))}
-            </div>
-          </section>
-        )}
         {features && features.length && (
           <section className={styles.features}>
             <div className="container">
@@ -198,6 +198,15 @@ function Home() {
                   <Feature key={idx} {...props} />
                 ))}
               </div>
+            </div>
+          </section>
+        )}
+        {steps && steps.length && (
+          <section className={styles.steps}>
+            <div className="container">
+              {steps.map((props, idx) => (
+                <Step key={idx} {...props} />
+              ))}
             </div>
           </section>
         )}
