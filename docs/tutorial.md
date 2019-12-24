@@ -52,6 +52,7 @@ framework:
             supports:
                 - Tienvx\Bundle\MbtBundle\Subject\SubjectInterface
             metadata:
+                model: true
                 label: "React Compare App"
                 tags: ["react", "compare"]
             places:
@@ -125,7 +126,8 @@ namespace App\Subject;
 use Tienvx\Bundle\MbtBundle\Annotation\Subject;
 use Tienvx\Bundle\MbtBundle\Annotation\Transition;
 use Tienvx\Bundle\MbtBundle\Annotation\Place;
-use Tienvx\Bundle\MbtBundle\Entity\Data;
+use Tienvx\Bundle\MbtBundle\Steps\Data;
+use Tienvx\Bundle\MbtBundle\Steps\DataHelper;
 use Tienvx\Bundle\MbtBundle\Subject\AbstractSubject;
 
 /**
@@ -157,6 +159,7 @@ class CompareApp extends AbstractSubject
      */
     public function compare1Product(Data $data)
     {
+        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
     }
 
     /**
@@ -164,6 +167,7 @@ class CompareApp extends AbstractSubject
      */
     public function compare2Products(Data $data)
     {
+        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
     }
 
     /**
@@ -171,6 +175,7 @@ class CompareApp extends AbstractSubject
      */
     public function compareMoreThan2Products(Data $data)
     {
+        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
     }
 
     /**
@@ -178,6 +183,7 @@ class CompareApp extends AbstractSubject
      */
     public function removeSingleProduct(Data $data)
     {
+        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
     }
 
     /**
@@ -185,6 +191,7 @@ class CompareApp extends AbstractSubject
      */
     public function removeNextToLastProduct(Data $data)
     {
+        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
     }
 
     /**
@@ -192,6 +199,7 @@ class CompareApp extends AbstractSubject
      */
     public function removeLastProducts(Data $data)
     {
+        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
     }
 }
 ```
@@ -237,7 +245,7 @@ index 1489aa4..9cb0abb 100644
 +
 +    protected $comparedProducts = [];
 +
-+    public function setUp(bool $testing = false)
++    public function setUp(bool $testing = false): void
 +    {
 +        if ($testing) {
 +            $this->client = Client::createChromeClient();
@@ -263,7 +271,7 @@ index 1489aa4..9cb0abb 100644
 +        );
 +    }
 +
-+    public function tearDown()
++    public function tearDown(): void
 +    {
 +        $this->client->quit();
 +    }
@@ -328,6 +336,7 @@ index 1489aa4..9cb0abb 100644
       */
      public function compare1Product(Data $data)
      {
+-        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
 +        $this->compare($data);
      }
  
@@ -336,6 +345,7 @@ index 1489aa4..9cb0abb 100644
       */
      public function compare2Products(Data $data)
      {
+-        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
 +        $this->compare($data);
      }
  
@@ -344,6 +354,7 @@ index 1489aa4..9cb0abb 100644
       */
      public function compareMoreThan2Products(Data $data)
      {
+-        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
 +        $this->compare($data);
      }
  
@@ -352,6 +363,7 @@ index 1489aa4..9cb0abb 100644
       */
      public function removeSingleProduct(Data $data)
      {
+-        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
 +        $this->remove($data);
      }
  
@@ -360,6 +372,7 @@ index 1489aa4..9cb0abb 100644
       */
      public function removeNextToLastProduct(Data $data)
      {
+-        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
 +        $this->remove($data);
      }
  
@@ -368,6 +381,7 @@ index 1489aa4..9cb0abb 100644
       */
      public function removeLastProducts(Data $data)
      {
+-        $value = DataHelper::get($data, 'key', $missCallback, $validateCallback);
 +        $this->remove($data);
 +    }
 +
@@ -459,12 +473,52 @@ env PANTHER_NO_HEADLESS=1 bin/console mbt:model:test compare_app --generator ran
 
 ### Test your model with UI
 
-After testing your model on your local machine, next step is testing it on a nearly production environment. We will built docker images and put your code in. To do that, run these commands:
+After testing your model on your command line, next step is testing it with UI.
+
+We will build docker images and put our code in. To do that, run these commands:
 
 ```bash
-cd docker
-docker-compose --project-name mbt-tutorial up --scale worker=2
-./install.sh
+docker build -t tutorial-worker -f docker/build/Dockerfile.worker .
+docker build -t tutorial-api -f docker/build/Dockerfile.api .
+docker build -t tutorial-api-nginx -f docker/build/Dockerfile.api-nginx .
+```
+
+Then we update docker images that we built:
+```
+diff --git a/docker-compose.yml b/docker-compose.yml
+index 85fa244..64eb283 100644
+--- a/docker-compose.yml
++++ b/docker-compose.yml
+@@ -13,20 +13,20 @@ services:
+         ports:
+             - 83:9000
+     api-nginx:
+-        image: "tienvx/mbt-examples-api-nginx:v1.15.1"
++        image: "tutorial-api-nginx"
+         depends_on:
+             - api
+         ports:
+             - 82:80
+     api:
+-        image: "tienvx/mbt-examples-api:v1.15.1"
++        image: "tutorial-api"
+         depends_on:
+             - db
+             - minio
+         env_file:
+             - docker/.env
+     worker:
+-        image: "tienvx/mbt-examples-worker:v1.15.1"
++        image: "tutorial-worker"
+         depends_on:
+             - db
+             - minio
+```
+
+Finally we will start UI:
+```
+docker-compose up --scale worker=2
+./docker/install.sh
 ```
 
 Then navigate to http://localhost and login with admin/admin. You can create your first task to test your model:
